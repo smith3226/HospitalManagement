@@ -1,0 +1,43 @@
+/* Highlight today's date */
+.react-calendar__tile--now {
+    background-color: transparent;
+    border: 2px solid green;
+    border-radius: 50%;
+    color: #000;
+  }
+  
+  /* Ensure that today retains its border, even when selected */
+  .react-calendar__tile--now.react-calendar__tile--active {
+    background-color: #f39c12 !important; /* Keep selected date's color */
+    border: 2px solid green; /* Keep today's green border */
+    color: red !important;
+    border-radius: 50%; /* Full circle for today */
+  }
+  
+  .react-calendar__tile--now{
+    color: red;
+  }
+  /* Style for selected date (non-today) */
+  .react-calendar__tile--active {
+    background-color: #f39c12 !important;
+    color: white!important;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  /* Ensure weekends (Saturday and Sunday) are not in red */
+  .react-calendar__month-view__days__day--weekend {
+    color: inherit;
+  }
+  
+  /* Style for hovering over a date */
+  .react-calendar__tile:hover {
+    background-color: #e0f7fa;
+    border-radius: 50%;
+  }
+  
+  /* Remove red color for weekends */
+  .react-calendar__month-view__days__day--weekend {
+    color: inherit;
+  }
+  

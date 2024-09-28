@@ -1,0 +1,70 @@
+.breathing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8; /* Background color */
+  position: relative;
+  overflow: hidden;
+}
+
+.circle-animation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px; /* Adjust based on your needs */
+  height: 300px; /* Adjust based on your needs */
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(52, 152, 219, 0.5); /* Change color as needed */
+  animation: breathe 10s infinite ease-in-out; /* Smooth transition */
+}
+
+.circle1 {
+  width: 100px;
+  height: 100px;
+  animation-delay: 0s;
+}
+
+.circle2 {
+  width: 120px;
+  height: 120px;
+  animation-delay: 1s;
+}
+
+.circle3 {
+  width: 140px;
+  height: 140px;
+  animation-delay: 2s;
+}
+
+.circle4 {
+  width: 160px;
+  height: 160px;
+  animation-delay: 3s;
+}
+
+.circle5 {
+  width: 180px;
+  height: 180px;
+  animation-delay: 4s;
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+}
