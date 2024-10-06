@@ -4,6 +4,7 @@ export const Context = createContext();
 
 const AppContext = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [appointments, setAppointments] = useState([]);
   const [user, setUser] = useState({});
 
   return (
@@ -11,6 +12,8 @@ const AppContext = ({ children }) => {
       value={{
         isAuthenticated,
         setIsAuthenticated,
+        appointments,
+        setAppointments,
         user,
         setUser,
       }}

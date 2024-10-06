@@ -7,7 +7,7 @@ import MentalHealth from './Pages/MentalWellbeing.jsx';
 import AllDoctors from './Pages/AllDoctors.jsx';
 import HealthScore from './Pages/HealthScore.jsx';
 import BreathingPage from './components/BreathingAnimation.jsx';
-// import AllDoctors from './Pages/AllDoctors'; 
+import Appointment from './Pages/Appointment.jsx';
 // import MoodLog from './Pages/MoodLog'; // Import Mood Log component
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
           <Route path="/alldoctors" element={<AllDoctors/>} />
           <Route path="/healthscore" element={<HealthScore/>}/>
           <Route path="/breathing" element={<BreathingPage />} />
+          <Route path="/appointment" element={<Appointment />} /> 
           {/* Add more routes as needed */}
         </Routes>
       </AppContext>
